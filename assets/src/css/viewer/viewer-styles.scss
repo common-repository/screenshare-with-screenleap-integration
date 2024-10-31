@@ -1,0 +1,98 @@
+$prefix: "gpls-sli-wp-screenleap-integration";
+
+.#{$prefix}-single-meeting {
+
+    #sli-viewer-meeting-iframe {
+        height: 100vh;
+    }
+
+    .led {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+    }
+    .led-black {
+        background-color: #333;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+        -webkit-animation: blinkRed 0.5s infinite;
+        -moz-animation: blinkRed 0.5s infinite;
+        -ms-animation: blinkRed 0.5s infinite;
+        -o-animation: blinkRed 0.5s infinite;
+        animation: blinkRed 0.5s infinite;
+    }
+
+    .led-red {
+        background-color: #F00;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+        -webkit-animation: blinkRed 0.5s infinite;
+        -moz-animation: blinkRed 0.5s infinite;
+        -ms-animation: blinkRed 0.5s infinite;
+        -o-animation: blinkRed 0.5s infinite;
+        animation: blinkRed 0.5s infinite;
+    }
+
+    .led-yellow {
+        background-color: #FF0;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px;
+        -webkit-animation: blinkYellow 1s infinite;
+        -moz-animation: blinkYellow 1s infinite;
+        -ms-animation: blinkYellow 1s infinite;
+        -o-animation: blinkYellow 1s infinite;
+        animation: blinkYellow 1s infinite;
+    }
+
+    .led-green {
+        background-color: #ABFF00;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+    }
+
+    .meeting-requires-login {
+        width: 500px;
+
+        #loginform {
+
+            margin-top: 20px;
+            padding: 26px 24px 26px;
+            font-weight: 400;
+            overflow: hidden;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .login-username {
+                margin: 0px 6px 16px 0px;
+                label {
+                    display: block;
+                    clear: both;
+                }
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            .login-password {
+                margin: 0px 6px 16px 0px;
+
+                label {
+                    display: block;
+                    clear: both;
+                }
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            .login-remember {
+                margin: 0px 6px 16px 0px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,110 @@
+$prefix: "gpls-sli-wp-screenleap-integration";
+
+.#{$prefix}-screenshare-preloader-container {
+    display: none;
+    position: fixed;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+
+    .preload-wrapper {
+        position: relative;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .preload-icon {
+        float: none;
+        margin: 20px auto;
+    }
+
+    .overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        opacity:0.7;
+        background:#FFF;
+        z-index:100;
+    }
+}
+
+.#{$prefix}-screenshare-details-container {
+
+    .screenshare-status {
+        display: flex;
+        flex-direction: row;
+        float: left;
+        align-items: center;
+    }
+
+    .status-title {
+        font-weight: bolder;
+    }
+
+    .led {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin: 0 auto;
+    }
+    .led-black {
+        background-color: #333;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #5f5959 0 -1px 9px, rgba(80, 73, 73, 0.5) 0 2px 12px;
+        -webkit-animation: blinkRed 0.5s infinite;
+        -moz-animation: blinkRed 0.5s infinite;
+        -ms-animation: blinkRed 0.5s infinite;
+        -o-animation: blinkRed 0.5s infinite;
+        animation: blinkRed 0.5s infinite;
+    }
+
+    .led-red {
+        background-color: #F00;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+        -webkit-animation: blinkRed 0.5s infinite;
+        -moz-animation: blinkRed 0.5s infinite;
+        -ms-animation: blinkRed 0.5s infinite;
+        -o-animation: blinkRed 0.5s infinite;
+        animation: blinkRed 0.5s infinite;
+    }
+
+    .led-yellow {
+        background-color: #FF0;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px;
+        -webkit-animation: blinkYellow 1s infinite;
+        -moz-animation: blinkYellow 1s infinite;
+        -ms-animation: blinkYellow 1s infinite;
+        -o-animation: blinkYellow 1s infinite;
+        animation: blinkYellow 1s infinite;
+    }
+
+    .led-green {
+        background-color: #ABFF00;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+    }
+
+    .reminder-subscription-emails-metabox {
+
+        .list-group {
+            max-height: 300px;
+            overflow-y: scroll;
+        }
+    }
+
+}
